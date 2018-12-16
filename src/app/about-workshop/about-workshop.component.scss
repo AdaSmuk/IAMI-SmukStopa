@@ -1,0 +1,18 @@
+.workshop-panels {
+    margin-top: 1.3rem;
+}
+.single-workshop {
+    margin-bottom: 1rem;
+}
+.img-desc-container {
+    display: inline-block;
+    img {
+        float: left;
+        margin-right: 1rem;
+    }
+    #desc {
+        padding-top: 50%;
+        font-size: 1.2rem;
+        display: inline;
+    }
+}

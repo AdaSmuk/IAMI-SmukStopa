@@ -1,0 +1,20 @@
+<mat-grid-list cols="2" rowHeight="2:1">
+    <mat-grid-tile (mouseover)="changeMatGridOver(0)" (mouseout)="changeMatGridOver(0)">
+      <div *ngIf="matGridOver[0]" class="img-desc">
+        08-11-2015
+      </div>
+      <img src="https://cdn.shopify.com/s/files/1/1664/1195/products/TB2nIYjhwxlpuFjSszbXXcSVpXa__1639138414_1024x1024.jpg?v=1527288118">
+    </mat-grid-tile>
+    <mat-grid-tile (mouseover)="changeMatGridOver(1)" (mouseout)="changeMatGridOver(1)">
+      <div *ngIf="matGridOver[1]" class="img-desc">
+        22-06-2016
+      </div>
+      <img src="http://www.sandipointe.com/im/bags/handmade-leather-bag-10.jpg">
+    </mat-grid-tile>
+    <mat-grid-tile (mouseover)="changeMatGridOver(2)" (mouseout)="changeMatGridOver(2)">
+      <div *ngIf="matGridOver[2]" class="img-desc">
+        11-07-2016
+      </div>
+      <img src="https://cdn.shopify.com/s/files/1/0043/9252/products/BT8A9110_copy.jpg?v=1542659850">
+    </mat-grid-tile>
+  </mat-grid-list>

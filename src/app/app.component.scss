@@ -1,0 +1,18 @@
+.main-card {
+    margin: 2.5rem;
+    font-family: 'Nanum Gothic', sans-serif;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.main-title {
+    font-family: 'Staatliches', cursive;
+    font-size: 2.8rem;
+    margin-left: 1.5rem;
+}
+
+.main-menu {
+    &:hover {
+        background-color: sienna;
+    }
+}

@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/purple-green.css";
+
+html {
+    height: 96%;
+    background-image: url('https://www.ccvlive.com/wp-content/uploads/2015/01/HiRes-copy.jpg');
+    background-repeat: repeat;
+    background-size: 30%;
+}
+
+.no-padding {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+.no-margin {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}

@@ -1,0 +1,23 @@
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    button {
+        margin: 0.5rem;
+    }
+    mat-form-field{
+        width: 30rem;
+        textarea {
+            height: 15rem;
+        }
+    }
+    .center-done {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

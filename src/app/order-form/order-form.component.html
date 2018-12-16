@@ -1,0 +1,45 @@
+<mat-horizontal-stepper [linear]="true" #stepper>
+  <mat-step [stepControl]="firstFormGroup">
+    <form [formGroup]="firstFormGroup">
+      <ng-template matStepLabel>Fill your order informations</ng-template>
+      <mat-form-field appearance="fill">
+        <textarea matInput placeholder="Order informations" formControlName="firstCtrl" required matTooltip="What item do you want us to make, dimension, colors, engravings..."></textarea>
+      </mat-form-field>
+      <div>
+        <button mat-button matStepperNext>Next</button>
+      </div>
+    </form>
+  </mat-step>
+  <mat-step [stepControl]="secondFormGroup">
+    <form [formGroup]="secondFormGroup">
+      <ng-template matStepLabel>Fill a delivery date</ng-template>
+      <mat-form-field>
+        <input matInput [matDatepicker]="picker" [min]="startDate" placeholder="Choose a delivery date" formControlName="secondCtrl"
+          required matTooltip="This date picker shows first available date for delivery">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker [startAt]="startDate"></mat-datepicker>
+      </mat-form-field>
+      <div>
+        <button mat-button matStepperPrevious>Back</button>
+        <button mat-button matStepperNext>Next</button>
+      </div>
+    </form>
+  </mat-step>
+  <mat-step [stepControl]="thirdFormGroup">
+    <form [formGroup]="thirdFormGroup">
+      <ng-template matStepLabel>Fill out your address</ng-template>
+      <mat-form-field>
+          <input matInput placeholder="Email adress" formControlName="thirdCtrl" required>
+      </mat-form-field>
+      <div>
+        <button mat-button matStepperPrevious>Back</button>
+        <button mat-button matStepperNext>Next</button>
+      </div>
+    </form>
+  </mat-step>
+  <mat-step class="center-done">
+        <ng-template matStepLabel>Done</ng-template>
+        Thank you for submitting your order.<br>
+        We will get in touch with you soon.
+  </mat-step>
+</mat-horizontal-stepper>

@@ -1,0 +1,26 @@
+<mat-grid-list cols="2" rowHeight="2:1">
+    <mat-grid-tile (mouseover)="changeMatGridOver(0)" (mouseout)="changeMatGridOver(0)">
+      <div *ngIf="matGridOver[0]" class="img-desc">
+        08-11-2015
+      </div>
+      <img src="https://www.celticleatherworks.com/wp-content/uploads/2016/05/barrettes-swirls-02.jpg">
+    </mat-grid-tile>
+    <mat-grid-tile (mouseover)="changeMatGridOver(1)" (mouseout)="changeMatGridOver(1)">
+      <div *ngIf="matGridOver[1]" class="img-desc">
+        22-06-2016
+      </div>
+      <img src="https://static.wixstatic.com/media/c0f650_53ddbe104c82460994b60fabc40189ed~mv2.jpg/v1/fill/w_783,h_585,al_c,q_90,usm_0.66_1.00_0.01/c0f650_53ddbe104c82460994b60fabc40189ed~mv2.webp">
+    </mat-grid-tile>
+    <mat-grid-tile (mouseover)="changeMatGridOver(2)" (mouseout)="changeMatGridOver(2)">
+      <div *ngIf="matGridOver[2]" class="img-desc">
+        11-07-2016
+      </div>
+      <img src="https://www.barefootleather.co.uk/image/cache/data/barretteredleaf800-800x800.jpg">
+    </mat-grid-tile>
+    <mat-grid-tile (mouseover)="changeMatGridOver(3)" (mouseout)="changeMatGridOver(3)">
+      <div *ngIf="matGridOver[3]" class="img-desc">
+        01-10-2016
+      </div>
+      <img src="https://www.barefootleather.co.uk/image/cache/data/Hair-Barrette-Fleur-800x800.jpg">
+    </mat-grid-tile>
+  </mat-grid-list>
